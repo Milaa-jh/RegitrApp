@@ -1,0 +1,7 @@
+{
+  "name": "regitrapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
