@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Vista De Base De Datos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="search-container">
+    <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search database entries"></ion-searchbar>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Database Entries</ion-card-title>
+      <ion-card-subtitle>Total entries: {{ databaseItems.length }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let item of filterItems()" class="database-item">
+          <ion-label>
+            <h2>{{ item.key }}</h2>
+            <p>{{ item.value | json }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="loadDatabaseItems()">
+      <ion-icon name="refresh-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

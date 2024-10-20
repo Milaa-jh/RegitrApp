@@ -1,13 +1,21 @@
-import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  imports: [IonicModule, RouterModule]
 })
-export class HomePage {
-  constructor() {}
+export class HomePage implements OnInit {
+  username: string = '';
+
+  constructor() { }
+
+  ngOnInit() {
+    // In a real app, you would get the username from a service or storage
+    this.username = 'Student';
+  }
 }

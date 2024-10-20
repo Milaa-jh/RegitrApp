@@ -1,0 +1,15 @@
+.welcome-message {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--ion-color-dark);
+  }
+  
+  .action-button {
+    margin-top: 20px;
+    --background: var(--ion-color-teacher);
+  }
+
+  ion-button {
+    --background: var(--ion-color-teacher);
+  }

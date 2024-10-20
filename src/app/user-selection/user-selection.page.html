@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>HOLA! Selecciona tu usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="ion-text-center">
+  <ion-img src="assets/img/user-selection.png" alt="User Types" style="max-width: 400px; margin: 30px auto;"></ion-img>
+  <ion-button  (click)="selectUserType('student')">Estudiante</ion-button>
+  <ion-button  (click)="selectUserType('teacher')">Docente</ion-button>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <ion-button expand="block" fill="clear" (click)="goToResetPassword()">Olvista tu Contraseña?</ion-button>
+  <ion-img src="assets/img/olvidar-contra.png" alt="User Types" style="max-width: 200px; margin: 30px auto;"></ion-img>
+ 
+</ion-content>

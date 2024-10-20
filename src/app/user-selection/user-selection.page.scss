@@ -1,0 +1,33 @@
+.user-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px; /* Añadido padding para evitar que los botones toquen las orillas */
+}
+
+.user-button {
+  width: 60%; /* Reducido para hacer los botones más pequeños */
+  max-width: 120px; /* Más pequeño aún */
+  margin: 20px; /* Reducido el margen para mejorar la separación */
+  --border-radius: 40px; /* Bordes redondeados pero más pequeños */
+  --background: var(--ion-color-light);
+  --color: var(--ion-color-dark);
+  font-size: 14px;  /* Texto más pequeño */
+}
+
+.ion-button {
+  margin-left: 10px; /* Reducido aún más para centrado */
+  margin-right: 10px; /* Igual para ambos lados */
+}
+
+.student-button {
+  --background: var(--ion-color-student);
+  --color: white;
+}
+
+.teacher-button {
+  --background: var(--ion-color-teacher);
+  --color: white;
+}

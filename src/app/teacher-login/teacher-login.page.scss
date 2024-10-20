@@ -1,0 +1,22 @@
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  ion-item {
+    --background: var(--ion-color-light);
+    --border-radius: 8px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    margin-bottom: 16px;
+  }
+  
+  ion-button {
+    margin-top: 24px;
+    --background: var(--ion-color-teacher);
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 16px;
+  }

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">QR de Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding centered-content">
+  <div class="qr-container">
+    <h2>Escanea esto para marcar tu Asistencia!!</h2>
+    <qrcode [qrdata]="qrData" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    <p>Datos del QR: {{qrData}}</p>
+  </div>
+</ion-content>
