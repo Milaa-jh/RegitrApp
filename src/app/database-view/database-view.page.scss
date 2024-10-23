@@ -1,28 +1,28 @@
 ion-content {
-    --background: #f4f5f8;
+    --background: #282222;
   }
   
   .search-container {
     padding: 16px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #3880ff;
+    border-radius: 30px;
   }
   
   ion-searchbar {
     --box-shadow: none;
-    --background: #f4f5f8;
+    --background: #f8f4f4;
     --border-radius: 4px;
+    color: #282222;
   }
   
   ion-card {
     margin: 16px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #9c9292;
   }
   
   ion-card-header {
     background-color: #3880ff;
-    color: #ffffff;
   }
   
   ion-card-title {
@@ -33,6 +33,7 @@ ion-content {
   ion-card-subtitle {
     font-size: 0.9rem;
     opacity: 0.8;
+    color: #282222;
   }
   
   .database-item {
@@ -66,5 +67,4 @@ ion-content {
   
   ion-fab-button {
     --background: #3880ff;
-    --color: #ffffff;
   }
